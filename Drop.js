@@ -1,14 +1,13 @@
 class Drops{
-
     constructor(x,y){
         var options={
       'restitution':0.3,
       'friction':0.1      
         }
 
-this.body=Bodies.circle(x,y,r,options);
+this.body=Bodies.circle(x,y,4,options);
 this.radius=4;
-World.add(world.this.body);
+World.add(world,this.body);
 
 }
 updateY(){
